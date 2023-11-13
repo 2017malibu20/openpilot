@@ -97,7 +97,7 @@ class Controls:
         ignore += ['driverCameraState', 'managerState']
       if self.params.get_bool('WideCameraOnly'):
         ignore += ['roadCameraState']
-      if self.dp_jetson:
+      if True:
         ignore += ['driverCameraState', 'driverMonitoringState']
       self.sm = messaging.SubMaster(['deviceState', 'pandaStates', 'peripheralState', 'modelV2', 'liveCalibration',
                                      'driverMonitoringState', 'longitudinalPlan', 'lateralPlan', 'liveLocationKalman',
