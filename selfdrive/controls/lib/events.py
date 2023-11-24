@@ -404,7 +404,7 @@ EVENTS: Dict[int, Dict[str, Union[Alert, AlertCallbackType]]] = {
   # See https://github.com/commaai/openpilot/wiki/Fingerprinting for more information
   EventName.carUnrecognized: {
     ET.PERMANENT: NormalPermanentAlert(_("Enter the settings"),
-                                       _(",select the vehicle model in the blue bar, and restart"),
+                                       _("Select the vehicle model in the blue bar, Then restart"),
                                        priority=Priority.LOWEST),
   },
 
